@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "greeting">Hello</p>
+    <p class="info">line 1</p>
+    <p class="info">line2</p>
+    <p class="note">note1</p>
+    <p class="note">note2</p>
+
+</body>
+<script>
+    let elem = document.querySelector(".info");
+    console.log("info",elem.textContent);
+    let elemArr = document.querySelector(".info");
+    let secondelem = elemArr[1];
+    console.log("info 2",secondelem.textContent);
+    let greetingelem = document.getElementById("greeting");
+    greetingelem.textContent= "changes by id";
+    let notesarr = document.getElementsByClassName("note");
+    console.log("********************");
+    for(let i=0;i<notesarr.length;i++){
+        console.log("notes",notesarr[i].textContent);
+    }
+</script>
+</html>
