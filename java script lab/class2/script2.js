@@ -84,3 +84,32 @@ divElem.addEventListener('click', function () {
         divElem.style.color="white";
     }
 })
+calculateElem.addEventListener('click', function() {
+    let valOne = inputOneElem.value;
+    let valTwo = inputTwoElem.value;
+    console.log(valOne, valTwo);
+    switch(selectedOperator){
+         case "+":
+            ans=valOne+valTwo;
+            console.log(ans);
+            outputElem.textContent=ans;
+            break;
+        case "-":
+            ans=valOne-valTwo;
+            console.log(ans);
+            outputElem.textContent=ans;
+            break;
+        case "*":
+            ans=valOne*valTwo;
+            console.log(ans);
+            outputElem.textContent=ans;
+            break;
+        case "/":
+            ans=valOne/valTwo;
+            console.log(ans);
+            outputElem.textContent=ans;
+            break;
+        default:
+    }
+       
+})
